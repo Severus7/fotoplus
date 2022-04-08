@@ -6,8 +6,8 @@ const FooterComponent = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "grey.800",
-        marginTop: "100px",
+        backgroundColor: "grey.700",
+        marginTop: "400px",
         height: "50%",
         padding: "70px 0px 150px 0px",
       }}

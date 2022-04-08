@@ -3,9 +3,14 @@ import { Card, CardHeader, CardMedia } from "@mui/material";
 
 const BeforeAfterCardComponent = (props) => {
   return (
-    <Card>
+    <Card elevation={12}>
       <CardHeader title={props.title} />
-      <CardMedia component="img" height="500" image={props.image} />
+      <CardMedia
+        component="img"
+        height="500"
+        image={props.image}
+        sx={props.sx}
+      />
     </Card>
   );
 };

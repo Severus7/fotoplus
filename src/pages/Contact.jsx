@@ -4,6 +4,7 @@ import {
   Button,
   Container,
   Grid,
+  Link,
   TextField,
   Typography,
 } from "@mui/material";
@@ -118,6 +119,30 @@ const Contact = () => {
           </Grid>
         </Container>
       </Box>
+      <Container sx={{ marginTop: "75px" }}>
+        <Typography
+          variant="h4"
+          component="div"
+          sx={{ marginBottom: "50px", fontWeight: "700" }}
+        >
+          About
+        </Typography>
+        <Box sx={{ width: "100%", marginBottom: "30px" }}>
+          <Typography
+            variant="h4"
+            component="div"
+            sx={{ lineHeight: "75px", textAlign: "left", fontWeight: "100" }}
+          >
+            In PhotoPlus, we are dedicated to providing excellent service to
+            you, our client, to win your condifence.
+          </Typography>
+        </Box>
+        <Link href="/about">
+          <Typography color="primary.dark" variant="h5">
+            Learn more about us!
+          </Typography>
+        </Link>
+      </Container>
       <FooterComponent />
     </React.Fragment>
   );
