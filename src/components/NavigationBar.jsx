@@ -49,7 +49,7 @@ const NavigationBar = () => {
                   label="Home"
                   sx={{ textTransform: "none" }}
                   component={Link}
-                  to="/home"
+                  to="/"
                 />
                 <Tab
                   label="Services"

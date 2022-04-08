@@ -26,7 +26,7 @@ const DrawerComponent = () => {
             divider
             button
             component={Link}
-            to="/home"
+            to="/"
             selected={value === 0}
           >
             <ListItemText>Home</ListItemText>
