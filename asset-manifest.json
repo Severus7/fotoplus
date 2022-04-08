@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/fotoplus/static/css/main.073c9b0a.css",
+    "main.js": "/fotoplus/static/js/main.e62a686d.js",
+    "static/js/787.454d30cd.chunk.js": "/fotoplus/static/js/787.454d30cd.chunk.js",
+    "static/media/edited_house_1.jpg": "/fotoplus/static/media/edited_house_1.44ee79997ff9a4500890.jpg",
+    "static/media/unedited_house_1.jpg": "/fotoplus/static/media/unedited_house_1.fe43764fd03c6f270ee1.jpg",
+    "static/media/headerimg.png": "/fotoplus/static/media/headerimg.69678c5c1284bd2f223d.png",
+    "static/media/headerimg2.png": "/fotoplus/static/media/headerimg2.3d4e6b1c7573f037f4ba.png",
+    "static/media/meeting.png": "/fotoplus/static/media/meeting.4eb36011e7beca8a3332.png",
+    "static/media/virtual_staging_after_1.jpg": "/fotoplus/static/media/virtual_staging_after_1.d31a0a11cd07e7f272a9.jpg",
+    "static/media/virtual_staging_before_1.jpg": "/fotoplus/static/media/virtual_staging_before_1.a804c4bb9c3c21167a1d.jpg",
+    "static/media/2D_to_3D_after_1.jpg": "/fotoplus/static/media/2D_to_3D_after_1.6f4bb1e40b5c54cfe8aa.jpg",
+    "static/media/2D_to_3D_Before_1.jpg": "/fotoplus/static/media/2D_to_3D_Before_1.b2447f3df5a2135ac96d.jpg",
+    "index.html": "/fotoplus/index.html",
+    "main.073c9b0a.css.map": "/fotoplus/static/css/main.073c9b0a.css.map",
+    "main.e62a686d.js.map": "/fotoplus/static/js/main.e62a686d.js.map",
+    "787.454d30cd.chunk.js.map": "/fotoplus/static/js/787.454d30cd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.e62a686d.js"
+  ]
+}
