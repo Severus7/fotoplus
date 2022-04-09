@@ -29,8 +29,12 @@ const Contact = () => {
         <Container>
           <Typography
             variant="h2"
-            color="primary"
-            sx={{ display: "flex", justifyContent: "center" }}
+            color="grey.50"
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              fontWeight: "100",
+            }}
           >
             Send us a message
           </Typography>
@@ -55,7 +59,16 @@ const Contact = () => {
                   rows={5}
                   maxRows={5}
                 />
-                <Button variant="contained">Submit</Button>
+                <Button
+                  variant="contained"
+                  color="common"
+                  sx={{
+                    backgroundColor: "grey.50",
+                    padding: "50px, 25px",
+                  }}
+                >
+                  Submit
+                </Button>
               </Box>
             </Grid>
             <Grid item lg={6}>

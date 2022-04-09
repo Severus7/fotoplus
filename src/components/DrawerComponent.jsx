@@ -34,19 +34,6 @@ const DrawerComponent = () => {
           <ListItem
             onClick={() => {
               setOpenDrawer(false);
-              setValue(1);
-            }}
-            divider
-            button
-            component={Link}
-            to="/services"
-            selected={value === 1}
-          >
-            <ListItemText>Services</ListItemText>
-          </ListItem>
-          <ListItem
-            onClick={() => {
-              setOpenDrawer(false);
               setValue(2);
             }}
             divider
@@ -69,6 +56,17 @@ const DrawerComponent = () => {
             selected={value === 3}
           >
             <ListItemText>Contact us</ListItemText>
+          </ListItem>
+          <ListItem
+            onClick={() => {
+              setOpenDrawer(false);
+              setValue(1);
+            }}
+            divider
+            button
+            selected={value === 1}
+          >
+            <ListItemText>Services</ListItemText>
           </ListItem>
           <ListItem>
             <ListItemText>Sign in</ListItemText>

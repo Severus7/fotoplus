@@ -7,7 +7,7 @@ import testimonialBanner from "../assets/meeting.png";
 const About = () => {
   return (
     <React.Fragment>
-      <Container sx={{ marginTop: "75px", marginBottom: "100px" }}>
+      <Container sx={{ marginTop: 15, marginBottom: 20 }}>
         <Typography
           variant="h4"
           component="div"
@@ -34,7 +34,7 @@ const About = () => {
         headerText="Testomial here"
         display="none"
       />
-      <Container sx={{ marginTop: "75px", marginBottom: "100px" }}>
+      <Container sx={{ marginTop: 15, marginBottom: 20 }}>
         <Typography
           variant="h4"
           component="div"
