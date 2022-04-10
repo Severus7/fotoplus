@@ -1,24 +1,30 @@
 {
   "files": {
-    "main.css": "/fotoplus/static/css/main.073c9b0a.css",
-    "main.js": "/fotoplus/static/js/main.c0538aa8.js",
+    "main.css": "/fotoplus/static/css/main.92ea72f5.css",
+    "main.js": "/fotoplus/static/js/main.8132a18f.js",
     "static/js/787.454d30cd.chunk.js": "/fotoplus/static/js/787.454d30cd.chunk.js",
     "static/media/edited_house_1.jpg": "/fotoplus/static/media/edited_house_1.44ee79997ff9a4500890.jpg",
     "static/media/unedited_house_1.jpg": "/fotoplus/static/media/unedited_house_1.fe43764fd03c6f270ee1.jpg",
     "static/media/headerimg.png": "/fotoplus/static/media/headerimg.69678c5c1284bd2f223d.png",
     "static/media/headerimg2.png": "/fotoplus/static/media/headerimg2.3d4e6b1c7573f037f4ba.png",
+    "static/media/item_removal_1_after.jpg": "/fotoplus/static/media/item_removal_1_after.306636193d6c6334e095.jpg",
     "static/media/meeting.png": "/fotoplus/static/media/meeting.4eb36011e7beca8a3332.png",
+    "static/media/item_removal_1_before.jpg": "/fotoplus/static/media/item_removal_1_before.6ee2f51b3badec01def4.jpg",
     "static/media/virtual_staging_after_1.jpg": "/fotoplus/static/media/virtual_staging_after_1.d31a0a11cd07e7f272a9.jpg",
     "static/media/virtual_staging_before_1.jpg": "/fotoplus/static/media/virtual_staging_before_1.a804c4bb9c3c21167a1d.jpg",
+    "static/media/virtual-assistant.jpg": "/fotoplus/static/media/virtual-assistant.96682f035d825858b1ba.jpg",
     "static/media/2D_to_3D_after_1.jpg": "/fotoplus/static/media/2D_to_3D_after_1.6f4bb1e40b5c54cfe8aa.jpg",
+    "static/media/sketch_to_2d_after_1.jpg": "/fotoplus/static/media/sketch_to_2d_after_1.acb8d9ec73c4bd0a271b.jpg",
     "static/media/2D_to_3D_Before_1.jpg": "/fotoplus/static/media/2D_to_3D_Before_1.b2447f3df5a2135ac96d.jpg",
+    "static/media/mockups.png": "/fotoplus/static/media/mockups.8da1cc5cb299764ebbdf.png",
+    "static/media/sketch_to_2d_before_1.png": "/fotoplus/static/media/sketch_to_2d_before_1.1a188c88bd5dd36a940e.png",
     "index.html": "/fotoplus/index.html",
-    "main.073c9b0a.css.map": "/fotoplus/static/css/main.073c9b0a.css.map",
-    "main.c0538aa8.js.map": "/fotoplus/static/js/main.c0538aa8.js.map",
+    "main.92ea72f5.css.map": "/fotoplus/static/css/main.92ea72f5.css.map",
+    "main.8132a18f.js.map": "/fotoplus/static/js/main.8132a18f.js.map",
     "787.454d30cd.chunk.js.map": "/fotoplus/static/js/787.454d30cd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.c0538aa8.js"
+    "static/css/main.92ea72f5.css",
+    "static/js/main.8132a18f.js"
   ]
 }
