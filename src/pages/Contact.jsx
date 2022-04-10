@@ -1,10 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Box,
   Button,
   Container,
   Grid,
-  Link,
   TextField,
   Typography,
 } from "@mui/material";
@@ -20,7 +20,7 @@ const Contact = () => {
     <React.Fragment>
       <Box
         sx={{
-          backgroundColor: "grey.800",
+          backgroundColor: "grey.900",
           height: "70%",
           paddingTop: 10,
           paddingBottom: 10,
@@ -150,13 +150,22 @@ const Contact = () => {
             you, our client, to win your condifence.
           </Typography>
         </Box>
-        <Link href="/about">
-          <Typography color="primary.dark" variant="h5">
+        <Button
+          component={Link}
+          to="/about"
+          sx={{
+            textTransform: "none",
+            "&:hover": { backgroundColor: "transparent" },
+          }}
+          disableRipple
+          disableFocusRipple
+        >
+          <Typography color="secondary.dark" variant="h5">
             Learn more about us!
           </Typography>
-        </Link>
+        </Button>
       </Container>
-      <FooterComponent />
+      <FooterComponent marginTop="200px" />
     </React.Fragment>
   );
 };

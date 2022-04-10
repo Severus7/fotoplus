@@ -54,7 +54,7 @@ const About = () => {
           </Typography>
         </Box>
       </Container>
-      <FooterComponent />
+      <FooterComponent marginTop="200px" />
     </React.Fragment>
   );
 };

@@ -11,6 +11,8 @@ import Services2DTo3D from "./pages/Services2DTo3D";
 import ServicesImageEnhancement from "./pages/ServicesImageEnhancement";
 import ServicesVirtualStaging from "./pages/ServicesVirtualStaging";
 import ServicesItemRemoval from "./pages/ServicesItemRemoval";
+import ServicesWebDesign from "./pages/ServicesWebDesign";
+import ServicesSketchTo2D from "./pages/ServicesSketchTo2D";
 import Error from "./pages/Error";
 import darkTheme from "./assets/theme.js";
 
@@ -41,6 +43,14 @@ function App() {
         <Route
           path="/services/item-removal"
           element={<ServicesItemRemoval />}
+        />
+        <Route
+          path="/services/sketch-to-2d-floor-plan"
+          element={<ServicesSketchTo2D />}
+        />
+        <Route
+          path="/services/web-design-and-development"
+          element={<ServicesWebDesign />}
         />
         <Route path="*" element={<Error />} />
       </Routes>

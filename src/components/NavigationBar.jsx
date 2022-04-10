@@ -112,27 +112,19 @@ const NavigationBar = () => {
                 <MenuItem
                   onClose={handleClose}
                   component={Link}
-                  to="/services/real-estate-virtual-assistant"
-                >
-                  Real Estate Virtual Assistant
-                </MenuItem>
-                <MenuItem
-                  onClose={handleClose}
-                  component={Link}
-                  to="/services/2D-floor-plan-to-3D-floor-plan"
-                >
-                  2D Floor Plan to 3D Floor Plan
-                </MenuItem>
-                <MenuItem onClose={handleClose} component={Link} to="/contact">
-                  Property Website Design and Development
-                </MenuItem>
-                <MenuItem
-                  onClose={handleClose}
-                  component={Link}
                   to="/services/image-enhancement"
                 >
                   Image Enhancement
                 </MenuItem>
+
+                <MenuItem
+                  onClose={handleClose}
+                  component={Link}
+                  to="/services/sketch-to-2d-floor-plan"
+                >
+                  Sketch Plan to 2D Floor Plan
+                </MenuItem>
+
                 <MenuItem
                   onClose={handleClose}
                   component={Link}
@@ -140,12 +132,37 @@ const NavigationBar = () => {
                 >
                   Virtual Staging
                 </MenuItem>
+
+                <MenuItem
+                  onClose={handleClose}
+                  component={Link}
+                  to="/services/2D-floor-plan-to-3D-floor-plan"
+                >
+                  2D Floor Plan to 3D Floor Plan
+                </MenuItem>
+
                 <MenuItem
                   onClose={handleClose}
                   component={Link}
                   to="/services/item-removal"
                 >
                   Item Removal
+                </MenuItem>
+
+                <MenuItem
+                  onClose={handleClose}
+                  component={Link}
+                  to="/services/real-estate-virtual-assistant"
+                >
+                  Real Estate Virtual Assistant
+                </MenuItem>
+
+                <MenuItem
+                  onClose={handleClose}
+                  component={Link}
+                  to="/services/web-design-and-development"
+                >
+                  Property Website Design and Development
                 </MenuItem>
               </Menu>
 

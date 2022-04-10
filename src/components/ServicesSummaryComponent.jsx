@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 const ServicesSummaryComponent = (props) => {
   return (
     <Container sx={{ marginBottom: 10 }}>
-      <Box sx={{ display: "flex" }}>
+      <Box sx={{ display: "flex", justifyContent: "space-between" }}>
         <Typography variant="h4" gutterBottom sx={{ marginRight: "20px" }}>
           {props.serviceName}
         </Typography>
@@ -28,7 +28,8 @@ const ServicesSummaryComponent = (props) => {
             <CardHeader title="Before" />
             <CardMedia
               component="img"
-              height="500"
+              height="100%"
+              width="100%"
               image={props.beforeImage}
               sx={props.sxBefore}
             />
@@ -39,7 +40,8 @@ const ServicesSummaryComponent = (props) => {
             <CardHeader title="After" />
             <CardMedia
               component="img"
-              height="500"
+              height="100%"
+              width="100%"
               image={props.afterImage}
               sx={props.sxAfter}
             />

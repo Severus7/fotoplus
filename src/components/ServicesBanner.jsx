@@ -5,7 +5,7 @@ const ServicesBanner = (props) => {
   return (
     <Box
       sx={{
-        backgroundColor: "grey.800",
+        backgroundColor: "grey.900",
         marginBottom: "100px",
         height: "40%",
         textAlign: "center",
