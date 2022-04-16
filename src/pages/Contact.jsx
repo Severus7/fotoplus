@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import {
   Box,
@@ -8,6 +8,10 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+import emailjs from "@emailjs/browser";
 import FooterComponent from "../components/FooterComponent";
 import BoxContactComponent from "../components/BoxContactComponent";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -15,7 +19,51 @@ import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 
+const schema = yup.object({
+  name: yup.string().required("This field is required"),
+  email: yup
+    .string()
+    .required("This field is required")
+    .email("Enter a valid email address"),
+  userMessage: yup.string().required("This field is required"),
+});
+
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    // e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_21awfcm", //EMAILJS SERVICE ID
+        "template_axiye8e", //EMAILJS TEMPLATE ID
+        form.current,
+        "0xZVPYZqdy0s1wwKk" //EMAILJS PUBLIC KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Success! We have received your message");
+          window.location.reload();
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Oops! Your message was not sent. Try again.");
+          window.location.reload();
+        }
+      );
+  };
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
+  const onSubmit = (data) => console.log(data);
+
   return (
     <React.Fragment>
       <Box
@@ -40,24 +88,41 @@ const Contact = () => {
           </Typography>
           <Grid container spacing={10} sx={{ marginTop: "10px" }}>
             <Grid item lg={6}>
-              <Box component="form">
+              <Box
+                component="form"
+                ref={form}
+                onSubmit={handleSubmit(sendEmail)}
+              >
                 <TextField
                   label="Name"
+                  name="name"
                   fullWidth
                   sx={{ marginBottom: "30px" }}
+                  {...register("name")}
+                  error={!!errors?.name}
+                  helperText={errors.name?.message}
                 />
+
                 <TextField
                   label="Email address"
+                  name="email"
                   fullWidth
                   sx={{ marginBottom: "30px" }}
+                  {...register("email")}
+                  error={!!errors?.email}
+                  helperText={errors.email?.message}
                 />
                 <TextField
                   label="Message"
+                  name="userMessage"
                   fullWidth
                   sx={{ marginBottom: "30px" }}
                   multiline
                   rows={5}
                   maxRows={5}
+                  {...register("userMessage")}
+                  error={!!errors?.userMessage}
+                  helperText={errors.userMessage?.message}
                 />
                 <Button
                   variant="contained"
@@ -66,6 +131,7 @@ const Contact = () => {
                     backgroundColor: "grey.50",
                     padding: "50px, 25px",
                   }}
+                  type="submit"
                 >
                   Submit
                 </Button>

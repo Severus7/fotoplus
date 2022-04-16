@@ -10,7 +10,7 @@ const FooterComponent = (props) => {
   return (
     <Box
       sx={{
-        backgroundColor: "#ab47bc",
+        backgroundColor: "grey.800",
         marginTop: `${props.marginTop}`,
         height: "50%",
         padding: "70px 0px 80px 0px",
@@ -19,7 +19,11 @@ const FooterComponent = (props) => {
       <Container>
         <Grid container spacing={20} justifyContent="center">
           <Grid item xs={12} lg={4}>
-            <Typography variant="h4" sx={{ marginBottom: "10px" }}>
+            <Typography
+              variant="h4"
+              color="white"
+              sx={{ marginBottom: "10px" }}
+            >
               Link
             </Typography>
             <FooterLinksComponent component={Link} route="/" page="Home" />
@@ -35,7 +39,11 @@ const FooterComponent = (props) => {
             />
           </Grid>
           <Grid item xs={12} lg={4}>
-            <Typography variant="h4" sx={{ marginBottom: "10px" }}>
+            <Typography
+              variant="h4"
+              color="white"
+              sx={{ marginBottom: "10px" }}
+            >
               Services
             </Typography>
             <FooterLinksComponent
@@ -65,7 +73,11 @@ const FooterComponent = (props) => {
             />
           </Grid>
           <Grid item xs={12} lg={4}>
-            <Typography variant="h4" sx={{ marginBottom: "10px" }}>
+            <Typography
+              variant="h4"
+              color="white"
+              sx={{ marginBottom: "10px" }}
+            >
               Foto+
             </Typography>
             <FooterLinksComponent component={Link} route="/" page="Home" />
@@ -84,7 +96,7 @@ const FooterComponent = (props) => {
         <Box
           sx={{ display: "flex", justifyContent: "center", marginTop: "150px" }}
         >
-          <Typography variant="body1" sx={{ fontWeight: 700 }}>
+          <Typography variant="body1" color="white" sx={{ fontWeight: 700 }}>
             Foto+ 2022
           </Typography>
         </Box>

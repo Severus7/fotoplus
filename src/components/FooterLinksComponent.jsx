@@ -16,7 +16,7 @@ const FooterLinksComponent = (props) => {
       >
         <Typography
           variant="p"
-          color="black"
+          color="white"
           sx={{ fontSize: "18px", textTransform: "none", fontWeight: 100 }}
           gutterBottom
         >
