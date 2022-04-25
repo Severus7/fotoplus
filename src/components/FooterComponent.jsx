@@ -1,7 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Paper, Typography } from "@mui/material";
 import FooterLinksComponent from "./FooterLinksComponent";
+import BoxContactComponent from "../components/BoxContactComponent";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
+import PhoneIcon from "@mui/icons-material/Phone";
+import EmailIcon from "@mui/icons-material/Email";
+import fotoplusLogo from "../assets/foto-plus-logo-white.png";
 
 // backgroundColor: "#ab47bc",
 // color="text.primary" white text
@@ -73,23 +79,63 @@ const FooterComponent = (props) => {
             />
           </Grid>
           <Grid item xs={12} lg={4}>
-            <Typography
-              variant="h4"
-              color="white"
-              sx={{ marginBottom: "10px" }}
-            >
-              Foto+
-            </Typography>
-            <FooterLinksComponent component={Link} route="/" page="Home" />
-            <FooterLinksComponent
-              component={Link}
-              route="/about"
-              page="About"
+            <Paper
+              component="img"
+              elevation={0}
+              src={fotoplusLogo}
+              sx={{
+                backgroundColor: "transparent",
+                height: "50px",
+                marginBottom: "10px",
+              }}
             />
-            <FooterLinksComponent
-              component={Link}
-              route="/contact"
-              page="Contact"
+            <BoxContactComponent
+              icon={<LocationOnIcon sx={{ fontSize: 30, color: "#fff" }} />}
+              value={
+                <Typography
+                  variant="body1"
+                  sx={{ fontSize: "20px", marginLeft: 3 }}
+                  color="common.white"
+                >
+                  Manila
+                </Typography>
+              }
+            />
+            <BoxContactComponent
+              icon={<PhoneIphoneIcon sx={{ fontSize: 30, color: "#fff" }} />}
+              value={
+                <Typography
+                  variant="body1"
+                  sx={{ fontSize: "20px", marginLeft: 3 }}
+                  color="common.white"
+                >
+                  +63 9xx xxxxxxx
+                </Typography>
+              }
+            />
+            <BoxContactComponent
+              icon={<PhoneIcon sx={{ fontSize: 30, color: "#fff" }} />}
+              value={
+                <Typography
+                  variant="body1"
+                  sx={{ fontSize: "20px", marginLeft: 3 }}
+                  color="common.white"
+                >
+                  123456789
+                </Typography>
+              }
+            />
+            <BoxContactComponent
+              icon={<EmailIcon sx={{ fontSize: 30, color: "#fff" }} />}
+              value={
+                <Typography
+                  variant="body1"
+                  sx={{ fontSize: "20px", marginLeft: 3 }}
+                  color="common.white"
+                >
+                  fotoplus@email.com
+                </Typography>
+              }
             />
           </Grid>
         </Grid>
@@ -97,7 +143,7 @@ const FooterComponent = (props) => {
           sx={{ display: "flex", justifyContent: "center", marginTop: "150px" }}
         >
           <Typography variant="body1" color="white" sx={{ fontWeight: 700 }}>
-            Foto+ 2022
+            Fotoplus 2022
           </Typography>
         </Box>
       </Container>

@@ -9,6 +9,7 @@ import {
   Menu,
   MenuItem,
   ListItem,
+  Paper,
   Tabs,
   Tab,
   Toolbar,
@@ -17,6 +18,7 @@ import {
   useTheme,
 } from "@mui/material";
 import DrawerComponent from "./DrawerComponent.jsx";
+import fotoplusLogo from "../assets/foto-plus-logo-white.png";
 
 const NavigationBar = () => {
   const [value, setValue] = useState(0);
@@ -35,11 +37,6 @@ const NavigationBar = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  // const tabs = () => {
-  //   return (
-
-  //   );
-  // };
 
   return (
     <AppBar position="static">
@@ -52,7 +49,17 @@ const NavigationBar = () => {
             </>
           ) : (
             <>
-              <Typography>Foto+</Typography>
+              <Paper
+                component="img"
+                elevation={0}
+                src={fotoplusLogo}
+                sx={{
+                  backgroundColor: "transparent",
+                  height: "50px",
+                  margin: "10px 10px 10px 20px",
+                }}
+              />
+
               <Tabs
                 textColor="inherit"
                 sx={{ marginLeft: "auto" }}

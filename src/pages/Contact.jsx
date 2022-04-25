@@ -36,10 +36,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_21awfcm", //EMAILJS SERVICE ID
-        "template_axiye8e", //EMAILJS TEMPLATE ID
+        "service_rcridx8", //EMAILJS SERVICE ID
+        "template_6g3af3p", //EMAILJS TEMPLATE ID
         form.current,
-        "0xZVPYZqdy0s1wwKk" //EMAILJS PUBLIC KEY
+        "AtdTo4dxGo3SVa05l" //EMAILJS PUBLIC KEY
       )
       .then(
         (result) => {

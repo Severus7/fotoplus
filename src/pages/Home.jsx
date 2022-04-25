@@ -39,9 +39,9 @@ const Home = () => {
       <div>
         <HeroSection
           height="90vh"
-          headerText="Welcome to Foto+"
-          component="h1"
-          variant="h1"
+          headerText="Welcome to Fotoplus"
+          component="h2"
+          variant="h2"
           image={headerImage}
           buttonText="Try it for free"
         />
